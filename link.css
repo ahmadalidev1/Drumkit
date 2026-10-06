@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url(./Images/imgi_1_pexels-soumil-kumar-735911.jpg) center/cover no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    gap: 18px;
+}
+
+.key {
+    width: 7%;
+    height: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+}
+
+.key span{
+    color:#f1c40f;
+    font-size: large;
+}
+
+.key::after {
+    content:"";
+    font-size: 11px;
+    color: #f1c40f;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+
+.key:hover {
+    border-color: #f1c40f;
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.6);
+}
+
+.play {
+    transform: scale(1.2);
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.2);
+    box-shadow: 0 0 30px #f1c40f;
+}
